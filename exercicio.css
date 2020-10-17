@@ -1,0 +1,58 @@
+#controles ul {
+  list-style-type: none;
+  padding: 0;
+  transform: translateX(-80%);
+}
+
+#controles ul:hover {
+  transform: translateX(0);
+
+op
+}
+
+ #controles ul {
+
+   transition: transform 400ms linear;
+ }
+.com-fome {
+  position: relative;
+  animation: fome .1s ease-in-out 0s infinite alternate;
+  background-color: yellow;
+  }
+  @keyframes fome {
+    from { left: 5px;}
+    to   { left: -5px;}
+  }
+
+.satisfeito {
+  position: relative;
+  animation: sati .2s ease-in-out 0s infinite alternate;
+  background-color: green;
+}
+@keyframes sati {
+  from { top: 0;}
+  to   { top: -30px; }
+}
+
+.com-raiva {
+  animation: raiva .1s ease-in-out 0s infinite alternate,
+             raiva2 .2s ease-in-out infinite alternate;
+  background-color: red;
+  }
+  @keyframes raiva {
+    from {   transform: scale(0.95);}
+    to   {   transform: scale(1.0)  ;}
+  }
+  @keyframes raiva2 {
+    from { opacity: 10;}
+    to   { opacity: 0; }
+  }
+
+.atacando {
+  animation: atacando .5s ease-in-out 0s infinite alternate;
+  background-color: #ee5a2f;
+  }
+  @keyframes atacando {
+    from {   transform: scale(1.0);}
+    to   {   transform: scale(1.5);}
+  }
